@@ -79,4 +79,20 @@ document.querySelectorAll('.link-card').forEach(card => {
   });
 });
 
+// Profile flip toggle
+const profileContainer = document.getElementById('profile-container');
+if (profileContainer) {
+  profileContainer.addEventListener('click', () => {
+    profileContainer.classList.toggle('flipped');
+  });
+  
+  // Support keyboard accessibility
+  profileContainer.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      profileContainer.classList.toggle('flipped');
+    }
+  });
+}
+
 console.log('Prasanth P — Socials loaded — Neo-Brutalist edition');

@@ -51,9 +51,16 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-inner">
-      <!-- Profile Photo -->
-      <div class="profile-photo-wrapper">
-        <img src="assets/profile.jpg" alt="Prasanth P" class="profile-photo" />
+      <!-- Profile Photo Flip Card -->
+      <div class="profile-photo-wrapper" id="profile-container" tabindex="0" role="button" aria-label="Toggle QR Code">
+        <div class="profile-flip-inner">
+          <div class="profile-flip-front">
+            <img src="assets/profile.jpg" alt="Prasanth P" class="profile-photo" />
+          </div>
+          <div class="profile-flip-back">
+            <img src="assets/qrcode.png" alt="QR Code" class="qr-photo" />
+          </div>
+        </div>
       </div>
 
       <h1 class="hero-title">
